@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Modern+Antiqua' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Word Feed</title>
+  </head>
+  <body>
+    <input type="text" id="searchInput" class="search" placeholder="Type search item or Bible passage" autofocus="autofocus">
+    <input type="button" id="btn" value="Search">
+    <span id="options">
+      <input type="radio" id="reference" value="content" name="options"><label for="reference">Read Passage</label>
+      <input type="radio" id="search" value="search" name="options" checked="true"><label for="search">Find in Bible</label>
+      <label id="info">Type text to search</label>
+    </span>
+    <div id="container">
+    </div>
+    <div id="searchListContainer">
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <footer>
+      <p>&copy; 2014 Timilehin Aderinola</p>
+        <a class="bibliaInfo" href="http://biblia.com/"><img src="img/PoweredByBiblia.png" alt="Powered by Biblia"></a>
+        <p class="bibliaInfo" id="bibliaInfo">This site uses the <a href="http://biblia.com/">Biblia</a> web services from <a href="http://www.logos.com/">Logos Bible Software</a></p>
+    </footer>
+  </body>
+</html>
