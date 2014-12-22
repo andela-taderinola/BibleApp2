@@ -4,13 +4,6 @@ var bibleApp = angular.module('bibleApp', ['bibleAppControllers']);
 
 var bibleAppControllers = angular.module('bibleAppControllers', []);
 
-// bibleAppControllers.controller('openController', ['$scope', function (scope) {
-//   scope.flipCover = function() {
-//     console.log("clicked");
-//     $("#homepageContainer").css("width", "-100em");
-//   };
-// }]); //end searchController
-
 bibleAppControllers.controller('bibleController', ['$scope', '$http', function (scope, http) {
   scope.inputText = "";
   scope.key = "517d06fdbe90e270534625197ed15845";
@@ -26,6 +19,7 @@ bibleAppControllers.controller('bibleController', ['$scope', '$http', function (
     "top": "-3em",
     "height": "4em",
     "padding-top": "0.1em",
+    "z-index": "1",
     "text-align": "center"
   });
 
