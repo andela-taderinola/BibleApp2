@@ -89,8 +89,6 @@ form {
   font-size: 1.5em;
   font-weight: bold;
   display: none;
-  /*background: url('../../img/scroll_background.png') no-repeat;
-  background-size: cover;*/
 }
 
 #searchListContainer {
@@ -100,8 +98,7 @@ form {
   top: 22.5%;
   overflow: hidden;
   text-align: left;
-/*  background: url('../../img/ancient_scroll_1600.png') no-repeat;
-*/background-size: cover;
+  background-size: cover;
   color: #000;
   font-size: 1em;
   display: none;

@@ -14,6 +14,7 @@
     <script type="text/javascript" src="js/custom/app.js"></script>
     <title>Word Feed</title>
   </head>
+
   <body ng-controller="bibleController">
     <div id="navbar" class="navbar">
       <form>
@@ -35,7 +36,7 @@
         </div>
         <input ng-model="refine" type="text" placeholder="Filter search results" class="form-control toReveal">
       </div>
-    <div class="container" id="searchListContainer">
+      <div class="container" id="searchListContainer">
         <dl ng-repeat="verse in searchResult | filter:refine">
           <dt>{{verse.title}}</dt>
           <dd>{{verse.preview}}</dd>
