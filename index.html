@@ -27,11 +27,15 @@
       </div>
     </div>
     <div class="container">
-      <div class="container" id="searchListContainer">
-        <p id="searchHeader">
-          Search Results: {{searchResponse.hitCount}} hits; {{searchResponse.resultCount}} results
-        </p>
-        <input ng-model="refine" type="text" placeholder="Filter search results" class="form-control">
+      <div id="searchHeader">
+        <p><strong>Search Sidebar</strong></p>
+        <div class="toReveal" id="searchSummary">
+          <p>"{{searchItem}}"</p>
+          <p id="count">{{searchResponse.hitCount}} hits; {{searchResponse.resultCount}} results<p>
+        </div>
+        <input ng-model="refine" type="text" placeholder="Filter search results" class="form-control toReveal">
+      </div>
+    <div class="container" id="searchListContainer">
         <dl ng-repeat="verse in searchResult | filter:refine">
           <dt>{{verse.title}}</dt>
           <dd>{{verse.preview}}</dd>
